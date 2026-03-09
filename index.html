@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fix Game – Download</title>
+    <title>DATE FIX 777 - Download</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* === Blue & White Theme === */
         * {
             margin: 0;
             padding: 0;
@@ -14,7 +15,7 @@
         }
 
         body {
-            background: linear-gradient(145deg, #0b1120, #1a2639);
+            background: linear-gradient(145deg, #e6f0fa, #ffffff); /* Soft blue-white gradient */
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -23,160 +24,245 @@
         }
 
         .card {
-            background: rgba(15, 23, 42, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #ffffff; /* White card background */
             border-radius: 2.5rem;
-            box-shadow: 0 25px 40px -12px #00000080;
-            max-width: 700px;
+            box-shadow: 0 20px 40px -10px #1e3a8a40; /* Soft blue shadow */
+            max-width: 850px;
             width: 100%;
-            padding: 3rem 2rem;
+            padding: 3rem 2.5rem;
             text-align: center;
+            border: 1px solid #b0c4de; /* Light blue border */
+        }
+
+        /* Logo styling */
+        .logo-container {
+            margin-bottom: 1.5rem;
+        }
+        .logo-container img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%; /* Circular logo */
+            border: 3px solid #1e3a8a; /* Dark blue border */
+            padding: 5px;
+            background: white;
         }
 
         h1 {
-            font-size: 2.4rem;
+            font-size: 2.8rem;
             font-weight: 800;
-            background: linear-gradient(135deg, #f97316, #facc15);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #1e3a8a; /* Dark blue headline */
             margin-bottom: 0.5rem;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         .subhead {
-            color: #94a3b8;
+            color: #2c5282; /* Medium blue */
             font-size: 1.2rem;
             margin-bottom: 2rem;
-            border-bottom: 1px dashed #334155;
+            border-bottom: 2px solid #b0c4de;
             padding-bottom: 1rem;
+            font-weight: 500;
         }
 
-        .icon-android {
-            font-size: 5rem;
-            color: #3b82f6;
-            background: #1e293b;
+        /* Big Image Placeholder */
+        .big-image-container {
+            margin: 2rem 0 2.5rem;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            box-shadow: 0 8px 20px -5px #1e3a8a70;
+            border: 2px solid #1e3a8a;
+            background: #f0f7ff; /* Light blue background for placeholder */
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .big-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .placeholder-message {
+            color: #2c5282;
+            font-size: 1.2rem;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        /* Message box (blue & white) */
+        .message-box {
+            background: #e6f0fa; /* Light blue background */
+            border-left: 6px solid #1e3a8a; /* Dark blue accent */
+            border-radius: 1.5rem;
+            padding: 1.8rem 1.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            color: #0a1c3a; /* Dark navy text */
+            box-shadow: 0 4px 10px #b0c4de;
+        }
+        .message-box p {
+            margin: 0.5rem 0;
+            font-size: 1.15rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .message-box i {
+            color: #1e3a8a; /* Dark blue icons */
+            width: 28px;
+            font-size: 1.4rem;
+        }
+        .message-box strong {
+            color: #1e3a8a;
+            font-weight: 700;
+        }
+        .highlight {
+            background: #ffffff; /* White highlight */
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
             display: inline-block;
-            padding: 1rem 1.5rem;
-            border-radius: 2rem;
-            margin-bottom: 2rem;
-            border: 1px solid #475569;
+            margin: 0.5rem 0;
+            border: 1px solid #1e3a8a;
+            color: #1e3a8a;
+            font-weight: 600;
         }
 
-        /* Download button */
+        /* Download button (blue) */
         .download-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 15px;
-            background: linear-gradient(145deg, #22c55e, #16a34a);
+            background: #1e3a8a; /* Dark blue */
             color: white;
             font-size: 2rem;
             font-weight: 700;
             padding: 1.2rem 3rem;
             border-radius: 60px;
             text-decoration: none;
-            box-shadow: 0 20px 25px -8px #22c55e80;
-            transition: all 0.2s;
-            border: 1px solid #ffffff30;
+            box-shadow: 0 10px 20px -5px #1e3a8a;
+            transition: all 0.2s ease;
+            border: 2px solid white;
             width: 100%;
-            max-width: 480px;
-            margin: 0 auto 2rem;
+            max-width: 550px;
+            margin: 2rem auto 1rem;
         }
-
         .download-btn i {
             font-size: 2.2rem;
         }
-
         .download-btn:hover {
-            background: linear-gradient(145deg, #16a34a, #15803d);
+            background: #2563eb; /* Lighter blue on hover */
             transform: translateY(-3px);
-            box-shadow: 0 28px 30px -8px #22c55e;
+            box-shadow: 0 15px 25px -5px #1e3a8a;
         }
 
         .info-box {
-            background: #0f172a;
+            background: #f0f7ff; /* Very light blue */
             border-radius: 2rem;
             padding: 1.5rem;
             text-align: left;
-            color: #cbd5e1;
-            border: 1px solid #334155;
+            color: #0a1c3a;
+            border: 1px solid #b0c4de;
             margin: 2rem 0 1rem;
         }
-
         .info-box p {
             margin: 0.8rem 0;
             display: flex;
             align-items: center;
             gap: 12px;
         }
-
         .info-box i {
-            color: #fbbf24;
+            color: #1e3a8a;
             width: 24px;
             font-size: 1.2rem;
         }
 
         .warning-note {
-            background: #1e293b;
+            background: #ffffff;
             border-radius: 40px;
             padding: 1rem;
-            color: #facc15;
-            border: 1px solid #facc1540;
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
             font-size: 0.95rem;
             margin-top: 1.5rem;
         }
 
         footer {
-            margin-top: 2rem;
-            color: #475569;
+            margin-top: 2.5rem;
+            color: #4a6fa5;
             font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>DOWNLOAD FIX GAME</h1>
-        <div class="subhead">The ultimate tool – now on Android</div>
-
-        <div class="icon-android">
-            <i class="fab fa-android"></i>
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <img src="YOUR_LOGO_IMAGE_URL_HERE" alt="DATE FIX 777 Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div style="display:none; color:#1e3a8a; padding:10px;">[Logo Placeholder - Add your direct image URL]</div>
         </div>
 
-        <!-- ======================================================= -->
-        <!--  IMPORTANT: Replace YOUR_APK_FILENAME.apk with the      -->
-        <!--  actual filename shown in your release (e.g., app-release.apk) -->
-        <!-- ======================================================= -->
+        <!-- Headline -->
+        <h1>DATE_FIX_777</h1>
+        <div class="subhead">Your trusted gaming platform</div>
+
+        <!-- Big Image Placeholder (for you to add later) -->
+        <div class="big-image-container" id="big-image-placeholder">
+            <!-- Replace this with your <img> tag when you have the big image -->
+            <div class="placeholder-message">
+                <i class="fas fa-image" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i>
+                Big Image Will Appear Here<br>
+                <small style="color: #2563eb;">(You can replace this with your own image URL)</small>
+            </div>
+        </div>
+
+        <!-- Promotional Message Box -->
+        <div class="message-box">
+            <p><i class="fas fa-download"></i> <strong>DOWNLOAD FOR DATE FOX SINGLE SHOOT GAME</strong></p>
+            <p><i class="fas fa-gamepad"></i> <strong>ALL GAME ARE AVAILABLE:</strong></p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 10px 34px;">
+                <span class="highlight">SRIDEVI</span>
+                <span class="highlight">TIME BAZAR</span>
+                <span class="highlight">KALYAN</span>
+                <span class="highlight">MILAN</span>
+                <span class="highlight">SRIDEVI NIGHT</span>
+                <span class="highlight">MILAN NIGHT</span>
+                <span class="highlight">MAIN BAZAR</span>
+            </div>
+            <p><i class="fas fa-trophy"></i> <strong>DOWNLOAD AND START EARNING NOW!</strong></p>
+        </div>
+
+        <!-- Download Button with your APK link -->
         <a class="download-btn" 
-           href="https://github.com/fixgame777/fixgame/releases/download/Typev1.0.0/YOUR_APK_FILENAME.apk"
+           href="https://github.com/fixgame777/fixgame/releases/download/Typev1.0.0/DATEFIX777.apk"
            download>
-            <i class="fas fa-download"></i> Download APK
+            <i class="fas fa-download"></i> DOWNLOAD APK
         </a>
 
+        <!-- App Details -->
         <div class="info-box">
             <p><i class="fas fa-check-circle"></i> Version 1.0.0 · Size varies</p>
-            <p><i class="fas fa-shield-alt"></i> Safe & ad‑free</p>
+            <p><i class="fas fa-shield-alt"></i> 100% Safe & Secure</p>
             <p><i class="fas fa-calendar-alt"></i> Updated: March 2026</p>
-            <p><i class="fas fa-android"></i> Android 6.0+ required</p>
+            <p><i class="fas fa-android"></i> Android 6.0+ Required</p>
         </div>
 
+        <!-- Installation Note -->
         <div class="warning-note">
             <i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>
-            After download, enable <strong>"Install from unknown sources"</strong> in your device settings to install.
-            <br><br>
-            <small>If download doesn't start, right‑click the button and choose "Save link as...".</small>
+            After download, enable <strong>"Install from unknown sources"</strong> in settings to install.
         </div>
 
         <footer>
-            © 2026 Fix Game. All rights reserved.
+            © 2026 DATE FIX 777. All rights reserved.
         </footer>
     </div>
 
     <script>
-        // Optional: click tracking
+        // Optional: just to confirm clicks
         document.querySelector('.download-btn').addEventListener('click', function() {
-            console.log('Download initiated');
+            console.log('Download started for DATE FIX 777');
         });
     </script>
 </body>
