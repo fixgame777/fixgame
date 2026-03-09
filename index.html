@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Game – Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(145deg, #0b1120, #1a2639);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2.5rem;
+            box-shadow: 0 25px 40px -12px #00000080;
+            max-width: 700px;
+            width: 100%;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f97316, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .subhead {
+            color: #94a3b8;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px dashed #334155;
+            padding-bottom: 1rem;
+        }
+
+        .icon-android {
+            font-size: 5rem;
+            color: #3b82f6;
+            background: #1e293b;
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #475569;
+        }
+
+        /* Download button */
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: linear-gradient(145deg, #22c55e, #16a34a);
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1.2rem 3rem;
+            border-radius: 60px;
+            text-decoration: none;
+            box-shadow: 0 20px 25px -8px #22c55e80;
+            transition: all 0.2s;
+            border: 1px solid #ffffff30;
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto 2rem;
+        }
+
+        .download-btn i {
+            font-size: 2.2rem;
+        }
+
+        .download-btn:hover {
+            background: linear-gradient(145deg, #16a34a, #15803d);
+            transform: translateY(-3px);
+            box-shadow: 0 28px 30px -8px #22c55e;
+        }
+
+        .info-box {
+            background: #0f172a;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            text-align: left;
+            color: #cbd5e1;
+            border: 1px solid #334155;
+            margin: 2rem 0 1rem;
+        }
+
+        .info-box p {
+            margin: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .info-box i {
+            color: #fbbf24;
+            width: 24px;
+            font-size: 1.2rem;
+        }
+
+        .warning-note {
+            background: #1e293b;
+            border-radius: 40px;
+            padding: 1rem;
+            color: #facc15;
+            border: 1px solid #facc1540;
+            font-size: 0.95rem;
+            margin-top: 1.5rem;
+        }
+
+        footer {
+            margin-top: 2rem;
+            color: #475569;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>DOWNLOAD FIX GAME</h1>
+        <div class="subhead">The ultimate tool – now on Android</div>
+
+        <div class="icon-android">
+            <i class="fab fa-android"></i>
+        </div>
+
+        <!-- ======================================================= -->
+        <!--  IMPORTANT: Replace YOUR_APK_FILENAME.apk with the      -->
+        <!--  actual filename shown in your release (e.g., app-release.apk) -->
+        <!-- ======================================================= -->
+        <a class="download-btn" 
+           href="https://github.com/fixgame777/fixgame/releases/download/Typev1.0.0/YOUR_APK_FILENAME.apk"
+           download>
+            <i class="fas fa-download"></i> Download APK
+        </a>
+
+        <div class="info-box">
+            <p><i class="fas fa-check-circle"></i> Version 1.0.0 · Size varies</p>
+            <p><i class="fas fa-shield-alt"></i> Safe & ad‑free</p>
+            <p><i class="fas fa-calendar-alt"></i> Updated: March 2026</p>
+            <p><i class="fas fa-android"></i> Android 6.0+ required</p>
+        </div>
+
+        <div class="warning-note">
+            <i class="fas fa-exclamation-triangle" style="margin-right: 8px;"></i>
+            After download, enable <strong>"Install from unknown sources"</strong> in your device settings to install.
+            <br><br>
+            <small>If download doesn't start, right‑click the button and choose "Save link as...".</small>
+        </div>
+
+        <footer>
+            © 2026 Fix Game. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        // Optional: click tracking
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            console.log('Download initiated');
+        });
+    </script>
+</body>
+</html>
